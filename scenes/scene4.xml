@@ -1,0 +1,32 @@
+<camera>
+	<position x = "-50" y = "-1200" z = "0" />
+	<angles x = "0" y = "0" z = "0" />
+</camera>
+
+<objects>
+	<sphere>
+		<attribute radius = "50" />
+		<color red = "0" green = "30" blue = "200" texture = "moon" />
+		<index reflection = "8" refraction = "0" transparency = "16" />
+		<position x = "100" y = "480" z = "36" />
+	</sphere>
+	<sphere>
+		<attribute radius = "100" />
+		<color red = "0" green = "30" blue = "200" texture = "earth" />
+		<index reflection = "12" refraction = "0" transparency = "0" />
+		<position x = "-88" y = "344" z = "0" />
+	</sphere>
+	<plane>
+		<angles x = "14" y = "8" z = "0" h = "1380" />
+		<color red = "255" green = "255" blue = "255" texture = "sun" />
+		<index reflection = "0" refraction = "0" transparency = "0" />
+	</plane>
+</objects>
+
+<light>
+	<basic>
+		<color red = "0" green = "0" blue = "0" />
+		<direction x = "0" y = "0" z = "0" />
+		<position x = "400" y = "-100" z = "-400" />
+	</basic>
+</light>

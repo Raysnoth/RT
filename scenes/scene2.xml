@@ -1,0 +1,74 @@
+<!--
+
+/!\ Commentaires autorises seulement si il commence ala premiere ligne /!\
+
+angle (cone attribute) between 0 and 180
+radius (sphere and cylinder attribute) bigger than 0
+reflection (index) between 0 and 100
+refraction (index) between 0 and 7
+transparency (index) between 0 and 100
+
+TEXTURES : CHECKER, MOON, SUN, EARTH, GARDEN, NONE
+
+OBJECTS : SPHERE, CYLINDER, PLANE, CONE, ELLIPSE, PARABOLE
+
+COLOR : RED, GREEN, BLUE, CYAN, YELLOW, MAGENTA, PINK, PURPLE, BROWN, BLACK, WHITE, GREY
+
+-->
+
+<camera>
+	<position x = "-984" y = "591" z = "109" />
+	<angles x = "-4" y = "1" z = "-93" />
+</camera>
+
+<objects>
+	<sphere>
+		<attribute radius = "50" />
+		<color red = "255" green = "96" blue = "0" texture = "none" />
+		<index reflection = "0" refraction = "4" transparency = "15" />
+		<position x = "-114" y = "340" z = "-16" />
+	</sphere>
+	<sphere>
+		<attribute radius = "50" />
+		<color red = "0" green = "50" blue = "170" texture = "none" />
+		<index reflection = "50" refraction = "0" transparency = "0" />
+		<position x = "114" y = "324" z = "0" />
+	</sphere>
+	<cylinder>
+		<angles x = "0" y = "56" z = "0" />
+		<attribute radius = "24" />
+		<color red = "255" green = "255" blue = "50" texture = "none" />
+		<index reflection = "20" refraction = "0" transparency = "0" />
+		<position x = "0" y = "500" z = "0" />
+	</cylinder>
+	<plane>
+		<angles x = "0" y = "0" z = "0" h = "57" />
+		<color red = "40" green = "51" blue = "100" texture = "none" />
+		<index reflection = "0" refraction = "0" transparency = "0" />
+	</plane>
+	<cone>
+		<angles x = "-30" y = "-43" z = "0" />
+		<attribute angle = "23" />
+		<color red = "255" green = "0" blue = "150" texture = "none" />
+		<index reflection = "0" refraction = "0" transparency = "0" />
+		<position x = "0" y = "615" z = "0" />
+	</cone>
+	<plane>
+		<angles x = "80" y = "0" z = "8" h = "729" />
+		<color red = "67" green = "243" blue = "164" texture = "none" />
+		<index reflection = "0" refraction = "0" transparency = "0" />
+	</plane>
+</objects>
+
+<light>
+	<basic>
+		<color red = "0" green = "0" blue = "0" />
+		<direction x = "0" y = "0" z = "0" />
+		<position x = "150" y = "200" z = "50" />
+	</basic>
+	<basic>
+		<color red = "0" green = "0" blue = "0" />
+		<direction x = "0" y = "0" z = "0" />
+		<position x = "-150" y = "200" z = "50" />
+	</basic>
+</light>
